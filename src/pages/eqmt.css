@@ -1,0 +1,261 @@
+/*==========================================
+        PREMIUM EQUIPMENT PAGE
+==========================================*/
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+
+    background:#050505;
+    color:#fff;
+    font-family:Inter,Arial,sans-serif;
+
+}
+
+/*==========================================
+        CONTAINER
+==========================================*/
+
+.equipment-container{
+
+    width:100%;
+
+    padding:120px 8% 80px;
+
+}
+
+.title{
+
+    text-align:center;
+
+    font-size:56px;
+
+    font-weight:800;
+
+    margin-bottom:50px;
+
+    letter-spacing:2px;
+
+    color:#fff;
+
+}
+
+.title span{
+
+    color:#ff3131;
+
+}
+
+/*==========================================
+          SEARCH BAR
+==========================================*/
+
+.search-box{
+
+    width:520px;
+
+    max-width:100%;
+
+    display:block;
+
+    margin:0 auto 60px;
+
+    padding:18px 28px;
+
+    border-radius:50px;
+
+    border:1px solid rgba(255,255,255,.08);
+
+    background:rgba(255,255,255,.05);
+
+    backdrop-filter:blur(15px);
+
+    color:white;
+
+    font-size:18px;
+
+    outline:none;
+
+    transition:.4s;
+
+}
+
+.search-box::placeholder{
+
+    color:#9e9e9e;
+
+}
+
+.search-box:focus{
+
+    border-color:#ff3131;
+
+    box-shadow:
+
+    0 0 20px rgba(255,49,49,.25);
+
+}
+
+/*==========================================
+          GRID
+==========================================*/
+
+.equipment-grid{
+
+    display:grid;
+
+    grid-template-columns:
+    repeat(auto-fit,minmax(340px,1fr));
+
+    gap:35px;
+
+}
+/*==========================================
+            EQUIPMENT CARD
+==========================================*/
+
+.equipment-card{
+
+    background:#111;
+
+    border-radius:28px;
+
+    overflow:hidden;
+
+    border:1px solid rgba(255,255,255,.08);
+
+    transition:.45s;
+
+    position:relative;
+
+    cursor:pointer;
+
+}
+
+.equipment-card::before{
+
+    content:"";
+
+    position:absolute;
+
+    inset:0;
+
+    background:
+    linear-gradient(
+    transparent,
+    rgba(255,49,49,.08));
+
+    opacity:0;
+
+    transition:.4s;
+
+}
+
+.equipment-card:hover::before{
+
+    opacity:1;
+
+}
+
+.equipment-card img{
+
+    width:100%;
+
+    height:280px;
+
+    object-fit:cover;
+
+    transition:.55s;
+
+}
+
+.equipment-card:hover img{
+
+    transform:scale(1.08);
+
+}
+
+.equipment-card h3{
+
+    padding:22px;
+
+    font-size:28px;
+
+    text-align:center;
+
+    color:white;
+
+}
+
+.equipment-card:hover{
+
+    transform:translateY(-12px);
+
+    border-color:#ff3131;
+
+    box-shadow:
+
+    0 0 25px rgba(255,49,49,.25),
+
+    0 20px 60px rgba(0,0,0,.55);
+
+}
+/*==========================================
+           RESPONSIVE
+==========================================*/
+
+@media(max-width:900px){
+
+.title{
+
+font-size:44px;
+
+}
+
+.equipment-grid{
+
+grid-template-columns:1fr;
+
+}
+
+}
+
+@media(max-width:600px){
+
+.equipment-container{
+
+padding:100px 6% 60px;
+
+}
+
+.title{
+
+font-size:34px;
+
+}
+
+.search-box{
+
+font-size:16px;
+
+padding:16px 22px;
+
+}
+
+.equipment-card img{
+
+height:220px;
+
+}
+
+.equipment-card h3{
+
+font-size:24px;
+
+}
+
+}
