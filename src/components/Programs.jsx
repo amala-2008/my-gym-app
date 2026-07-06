@@ -6,18 +6,24 @@ function Programs() {
       <div className="program-container">
 
         <div className="program-card">
-          <h3>Weight Loss</h3>
-          <p>High-intensity circuits and metabolic coaching for fast, healthy results.</p>
+          <div className="program-content">
+            <h3>Weight Loss</h3>
+            <p>High-intensity circuits and metabolic coaching for fast, healthy results.</p>
+          </div>
         </div>
 
         <div className="program-card">
-          <h3>Muscle Gain</h3>
-          <p>Strength-driven training and progressive overload plans built for growth.</p>
+          <div className="program-content">
+            <h3>Muscle Gain</h3>
+            <p>Strength-driven training and progressive overload plans built for growth.</p>
+          </div>
         </div>
 
         <div className="program-card">
-          <h3>Cardio Training</h3>
-          <p>Dynamic endurance sessions to improve stamina, energy, and athletic performance.</p>
+          <div className="program-content">
+            <h3>Cardio Training</h3>
+            <p>Dynamic endurance sessions to improve stamina, energy, and athletic performance.</p>
+          </div>
         </div>
 
       </div>

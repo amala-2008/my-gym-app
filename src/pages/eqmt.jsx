@@ -13,6 +13,7 @@ import cablemachine from "../assets/images/cablemachine.jpg";
 import latpulldown from "../assets/images/latpulldown.jpg";
 import smithmachine from "../assets/images/smithmachine.jpg";
 import rowingmachine from "../assets/images/rowingmachine.webp";
+import Navbar from "../components/Navbar";
 
 function Eqmt() {
   const [search, setSearch] = useState("");
@@ -40,6 +41,7 @@ function Eqmt() {
 
   return (
     <div className="equipment-container">
+      <Navbar/>
       <h1 className="title">Gym Equipments</h1>
 
       <input
